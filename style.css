@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animate {
+    text-transform: uppercase;
+    background-image: linear-gradient(225deg,
+            #231557 0%,
+            #44197a 29%,
+            #ff1361 67%,
+            #fff800);
+    background-size: auto auto;
+    background-clip: border-box text;
+    background-size: 200% auto;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: clip 2s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+}
+
+@keyframes clip {
+    to {
+        background-position: 100% center;
+    }
+
+    from {
+        background-position: 500% center;
+    }
+}
